@@ -1,23 +1,47 @@
 # Compendium
 
-Structured knowledge documents in LaTeX and Typst.
+Structured knowledge documents in LaTeX.
 
 ---
 
-## ed-sys — Education Systems: USA & Europe
+## Education Systems: USA & Europe
 
-Comparative breakdown of K–12 and higher education
-across the United States and Europe.
+A comprehensive comparative breakdown of K–12 and higher education systems across the United States and Europe. Covers constitutional foundations, federal/state authority structures, accreditation frameworks, and curriculum standards.
 
-![](assets/ed-sys-1.png)
-![](assets/ed-sys-2.png)
-![](assets/ed-sys-3.png)
-![](assets/ed-sys-4.png)
+**Build Requirements:**
+- LaTeX distribution with `latexmk` and `lualatex`
+- TeX Gyre fonts (Pagella, Heros Condensed)
+
+**Build:**
+```bash
+cd ed-sys
+latexmk main.tex
+```
+
+**Live Preview:**
+```bash
+# Terminal 1: continuous compiler
+latexmk -pvc main.tex
+
+# Terminal 2: editor
+hx main.tex
+
+# Terminal 3: PDF viewer
+zathura output/main.pdf
+```
+
+### Preview
+
+![Cover](assets/ed-sys-01.png)
+
+![Contents](assets/ed-sys-02.png)
+
+![Sample page](assets/ed-sys-03.png)
+
+![Sample page](assets/ed-sys-04.png)
 
 ---
 
-## next-project-folder-name — Title Here
+## License
 
-Description here.
-
-![](assets/next-1.png)
+No license. All rights reserved.
